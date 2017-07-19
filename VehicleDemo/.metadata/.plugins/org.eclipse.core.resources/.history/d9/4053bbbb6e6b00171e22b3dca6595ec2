@@ -1,0 +1,25 @@
+
+class Vehicle{
+	int passenger_limit;
+	int fuel_capacity;
+	int miles_per_gallon;
+}
+
+public class VehicleDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Vehicle minivan = new Vehicle();
+		int range;
+		minivan.passenger_limit =7;
+		minivan.fuel_capacity = 16;
+		minivan.miles_per_gallon = 21;
+		
+		//compute the range assuming a full tank of gas.
+		range =  minivan.fuel_capacity * minivan.miles_per_gallon;
+		System.out.println("Minivan can carry " + minivan.passenger_limit +
+				" passengers for a distance of " + range +" miles, when tank if filled to full capacity.");
+
+	}
+
+}
