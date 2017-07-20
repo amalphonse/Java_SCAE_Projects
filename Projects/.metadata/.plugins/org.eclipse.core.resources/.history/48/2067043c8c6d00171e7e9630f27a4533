@@ -8,21 +8,8 @@ class TwoDShape{
 }
 
 class Triangle extends TwoDShape{
-	
-	private String style;
-	
-	Triangle(String s, double w, double h){
-		width = w;
-		style = s;
-		height = h;
-	}
-	
 	double area(){
 		return width * height /2;
-	}
-	
-	void showStyle(){
-		System.out.print("Triangle is " + style);
 	}
 }
 
@@ -37,7 +24,7 @@ public class Shapes {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Triangle tr = new Triangle("isosceles",4.0,4.0);
+		Triangle tr = new Triangle();
 		Rectangle rect = new Rectangle();
 		
 		tr.width = 4.0;
